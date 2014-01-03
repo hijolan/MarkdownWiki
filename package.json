@@ -1,0 +1,21 @@
+{
+	"name": "markdownwiki",
+	"version": "0.0.1",
+	"description": "Code-Wiki with snippet integration based on OpenUI5 that relies on usage of gists for presentation",
+	"main": "index.html",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "ssh://github.com/re"
+	},
+	"author": "Constantin Lebrecht <constantin@monavari.de>",
+	"license": "MIT",
+	"devDependencies": {
+		"grunt": "~0.4.1",
+		"grunt-contrib-qunit": "~0.2.2",
+		"grunt-contrib-jshint": "~0.6.3",
+		"grunt-contrib-watch": "~0.5.2"
+	}
+}
