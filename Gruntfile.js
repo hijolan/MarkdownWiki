@@ -65,6 +65,14 @@ module.exports = function(grunt) {
 				files: '<%= jshint.application.src %>',
 				tasks: ['collaboration']
 			}
+		},
+
+		connect: {
+			server: {
+				options: {
+					keepalive: true
+				}
+			}
 		}
 	});
 
@@ -72,6 +80,8 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-qunit');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+
+	grunt.loadNpmTasks('grunt-contrib-connect');
 
 	// Default task.
 	grunt.registerTask('default', ['jshint', 'qunit:all', 'watch']);
